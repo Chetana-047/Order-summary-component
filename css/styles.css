@@ -1,0 +1,162 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Red+Hat+Display:wght@500;700;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        /* color*/
+        --Very-pale-blue: hsl(225, 100%, 98%);
+        --Desaturated-blue: hsl(224, 23%, 55%);
+        --Dark-blue: hsl(223, 47%, 23%);
+        --Pale-blue: hsl(225, 100%, 94%);
+        --Bright-blue: hsl(245, 75%, 52%);
+    }
+    /* utilities*/
+    
+    .text-Desaturated-blue {
+        color: var(--Desaturated-blue);
+    }
+    
+    .text-Dark-blue {
+        color: var(--Dark-blue);
+    }
+    
+    body {
+        line-height: 1.2;
+        font-family: 'Red Hat Display', sans-serif;
+        background: url('../images/pattern-background-desktop.svg') no-repeat;
+        background-position-y: top;
+        background-color: var(--Pale-blue);
+    }
+    
+    p {}
+    /* background*/
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+    .sr-only {
+        position: absolute !important;
+        margin: -1px !important;
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        border: 0 !important;
+        padding: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+    }
+    /* card*/
+    
+    .card {
+        background-color: #fff;
+        width: 350px;
+        border-radius: 15px;
+    }
+    
+    .card>img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .card h3,
+    p {
+        text-align: center;
+        padding: 1.5rem 1rem 0;
+    }
+    
+    .card p {
+        color: var(--Desaturated-blue);
+        padding-bottom: 1.5rem;
+        font-size: 0.8rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* card -package*/
+    
+    .card-package {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: var(--Very-pale-blue);
+        width: 85%;
+        margin: 0 auto 1.3rem;
+        border-radius: 15px;
+        padding: 1rem;
+    }
+    
+    .card-package ul {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .card-package ul li {
+        list-style: none;
+    }
+    
+    .card-package ul li h5 {
+        padding-left: 0.5rem;
+    }
+    
+    .card-package a {
+        color: var(--Bright-blue);
+        font-size: 0.8rem;
+    }
+    
+    .card-package a:hover {
+        text-decoration: none;
+        opacity: 0.7;
+    }
+    /* button*/
+    
+    .container .btn {
+        display: block;
+        width: 87%;
+        padding: 0.8rem;
+        color: #fff;
+        background-color: var(--Bright-blue);
+        text-decoration: none;
+        margin: 0 auto 0.8rem;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .container .btn:hover {
+        opacity: 0.7;
+    }
+    
+    .container .cancel-link {
+        display: block;
+        margin: 1.3rem auto;
+        text-align: center;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+    
+    .container .cancel-link:hover {
+        color: var(--Dark-blue);
+        font-weight: 700;
+    }
+    
+    @media (max-width:476px) {
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    .attribution {
+        text-align: center;
+        margin: 0 auto;
+    }
